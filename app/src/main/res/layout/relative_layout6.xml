@@ -1,0 +1,168 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_margin="10dp"
+    android:padding="5dp">
+
+    <TextView
+        android:id="@+id/iw_name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Name: "
+        android:textSize="18dp"
+        android:layout_toStartOf="@id/et_name2"
+        android:layout_marginTop="40dp"
+        android:textStyle="bold"
+
+        />
+
+    <EditText
+        android:id="@+id/et_name2"
+        android:layout_width="160dp"
+        android:layout_height="wrap_content"
+        android:hint="Enter name"
+        android:inputType="number"
+        android:layout_toStartOf="@id/iw_androidlogo2"
+        android:layout_marginTop="30dp"
+
+        />
+
+    <TextView
+        android:id="@+id/iw_name2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Address: "
+        android:inputType="number"
+        android:textSize="18dp"
+        android:layout_below="@id/et_name2"
+        android:layout_toStartOf="@id/et_address2"
+        android:layout_marginTop="10dp"
+        android:textStyle="bold"
+
+
+        />
+
+    <EditText
+        android:id="@+id/et_address2"
+        android:layout_width="160dp"
+        android:layout_height="wrap_content"
+        android:hint="Enter address"
+        android:layout_toStartOf="@id/iw_androidlogo2"
+        android:layout_below="@id/et_name2"
+        />
+
+    <ImageView
+        android:id="@+id/iw_androidlogo2"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:src="@android:drawable/sym_def_app_icon"
+        android:layout_alignParentRight="true"
+        />
+
+    <TextView
+        android:id="@+id/tw_details"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Purchase Details"
+        android:layout_below="@id/iw_androidlogo2"
+        android:textStyle="bold"
+        android:textSize="16dp"
+        android:textColor="#4AB24A"
+
+        />
+    <TextView
+        android:id="@+id/productname"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Product name: "
+        android:layout_below="@id/tw_details"
+        android:padding="5dp"
+/>
+
+    <TextView
+        android:id="@+id/wireless"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Wireless Headphones"
+        android:layout_toEndOf="@id/productname"
+        android:layout_below="@id/tw_details"
+        android:padding="5dp"
+
+        />
+
+    <TextView
+        android:id="@+id/tw_price"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Price: "
+        android:layout_below="@id/productname"
+        android:padding="5dp"
+/>
+
+    <TextView
+        android:id="@+id/tw_price_1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="$ 199"
+        android:layout_toEndOf="@id/tw_price"
+        android:layout_below="@id/productname"
+        android:padding="5dp"
+
+        />
+
+    <TextView
+        android:id="@+id/tw_ql"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tw_price"
+        android:layout_alignParentStart="true"
+        android:layout_marginStart="-1dp"
+        android:layout_marginTop="35dp"
+        android:text="Quantity:"
+        android:textSize="16sp" />
+
+    <EditText
+        android:id="@+id/editTextQuantity"
+        android:layout_width="60dp"
+        android:layout_height="wrap_content"
+        android:text="1"
+        android:inputType="number"
+        android:layout_alignBaseline="@+id/tw_ql"
+        android:layout_toEndOf="@+id/tw_ql"
+        android:layout_marginStart="8dp"
+        android:background="@android:drawable/edit_text" />
+
+    <Button
+        android:id="@+id/buttonConfirmPurchase"
+        android:layout_width="190dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="0dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="4dp"
+        android:layout_marginRight="16dp"
+        android:layout_marginBottom="28dp"
+        android:layout_toStartOf="@+id/buttonCancel"
+        android:backgroundTint="#4CAF50"
+        android:text="Confirm Purchase"
+        android:textColor="#FFFFFF" />
+
+    <Button
+        android:id="@+id/buttonCancel"
+        android:layout_width="179dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="3dp"
+        android:layout_marginRight="16dp"
+        android:layout_marginBottom="28dp"
+        android:backgroundTint="#F44336"
+        android:text="Cancel"
+        android:textColor="#FFFFFF" />
+
+</RelativeLayout>
