@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_margin="8dp"
+    android:padding="8dp"
+    android:background="#AED9EB">
+
+    <ImageView
+        android:id="@+id/iw_androidlogo"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:src="@android:drawable/sym_def_app_icon"
+        />
+
+
+    <TextView
+        android:id="@+id/tw_name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Name"
+        android:textSize="18dp"
+        android:layout_toEndOf="@id/iw_androidlogo"
+        android:layout_margin="8dp"
+        />
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Email your name"
+        android:layout_toEndOf="@id/iw_androidlogo"
+        android:layout_below="@id/tw_name"
+        android:background="#FFFFFF"
+        android:padding="8dp"
+        android:layout_margin="8dp"
+
+        />
+
+    <TextView
+        android:id="@+id/tw_address"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:hint="Address: "
+        android:textSize="18dp"
+        android:layout_below="@id/iw_androidlogo"
+        android:layout_centerHorizontal="true"
+        android:layout_margin="8dp"
+        />
+
+    <EditText
+        android:id="@+id/et_address"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Email your address"
+        android:layout_below="@id/tw_address"
+        android:background="#FFFFFF"
+        android:padding="8dp"
+        android:layout_margin="8dp"
+        />
+
+    <TextView
+        android:id="@+id/tw_phone"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="18dp"
+        android:text="Phone:"
+        android:layout_margin="8dp"
+        android:layout_below="@id/et_address"
+        />
+
+
+    <EditText
+        android:id="@+id/et_phone"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Email your address"
+        android:layout_below="@id/et_address"
+        android:layout_toEndOf="@id/tw_phone"
+        android:background="#FFFFFF"
+        android:padding="8dp"
+        android:layout_marginRight="8dp"
+        android:layout_centerVertical="true"
+        />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Save"
+        android:layout_marginTop="20dp"
+        android:backgroundTint="#4AB24A"
+        android:layout_below="@id/et_phone"
+        />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Cancel"
+        android:layout_marginTop="20dp"
+
+        android:backgroundTint="#F6403B"
+        android:layout_below="@id/et_phone"
+        android:layout_alignParentRight="true"
+        />
+
+</RelativeLayout>
