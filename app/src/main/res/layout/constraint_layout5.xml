@@ -35,6 +35,8 @@
         android:hint="Full name: "
         app:layout_constraintTop_toTopOf="@id/iw_kep2"
         app:layout_constraintStart_toEndOf="@id/iw_kep2"
+        android:background="@android:drawable/edit_text"
+
         tools:ignore="MissingConstraints" />
 
     <TextView
@@ -55,6 +57,7 @@
         android:hint="Enter your email: "
         app:layout_constraintTop_toBottomOf="@id/tw_1"
         app:layout_constraintStart_toEndOf="@id/iw_kep2"
+        android:background="@android:drawable/edit_text"
         tools:ignore="MissingConstraints" />
 
     <TextView
@@ -74,6 +77,8 @@
         android:hint="Enter your phone number"
         app:layout_constraintTop_toBottomOf="@id/tw_2"
         app:layout_constraintStart_toEndOf="@id/iw_kep2"
+        android:background="@android:drawable/edit_text"
+
         tools:ignore="MissingConstraints" />
 
     <TextView
@@ -92,6 +97,7 @@
         android:hint="Enter your adress: "
         app:layout_constraintTop_toBottomOf="@id/tw_3"
         app:layout_constraintStart_toEndOf="@id/iw_kep2"
+        android:background="@android:drawable/edit_text"
         tools:ignore="MissingConstraints" />
 
     <Button
